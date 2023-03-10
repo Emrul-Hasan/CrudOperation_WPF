@@ -102,5 +102,16 @@ namespace CrudOperation
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+        private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CrudOperation"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="10,-22,-151.4,-79">
         <Label Content="Label" HorizontalAlignment="Left" Margin="378,20,0,0" VerticalAlignment="Top"/>
         <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.585,3.846" Height="26" Width="61" Margin="25,79,0,0"/>
         <Label Content="Age" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.318,5.488" Height="30" Width="49" Margin="25,110,0,0"/>
@@ -19,8 +19,10 @@
         <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="226" Margin="315,79,0,0" VerticalAlignment="Top" Width="425"/>
         <Button x:Name="InsertBtn" Content="Insert" HorizontalAlignment="Left" Margin="114,348,0,0" VerticalAlignment="Top" Width="107" Height="34" FontSize="16" FontFamily="Segoe UI Black" Click="InsertBtn_Click"/>
         <Button x:Name="UpdateBtn" Content="Update" HorizontalAlignment="Left" Margin="261,348,0,0" VerticalAlignment="Top" Width="104" Height="34" FontSize="16" FontFamily="Segoe UI Black"/>
-        <Button x:Name="DeleteBtn" Content="Delete" HorizontalAlignment="Left" Margin="416,348,0,0" VerticalAlignment="Top" Width="85" Height="34" FontSize="16" FontFamily="Segoe UI Black"/>
+        <Button x:Name="DeleteBtn" Content="Delete" HorizontalAlignment="Left" Margin="416,348,0,0" VerticalAlignment="Top" Width="85" Height="34" FontSize="16" FontFamily="Segoe UI Black" Click="DeleteBtn_Click"/>
         <Button x:Name="ClearDataBtn" Content="Clear" HorizontalAlignment="Left" Margin="565,348,0,0" VerticalAlignment="Top" Width="104" Height="30" FontSize="16" FontFamily="Segoe UI Black" Click="ClearDataBtn_Click"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="48,306,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.204,1.933" Height="23" Width="49"/>
+        <TextBox x:Name="Search_txt"  HorizontalAlignment="Left" Height="23" Margin="102,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>
